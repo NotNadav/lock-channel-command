@@ -16,8 +16,9 @@ module.exports.execute = async (bot, message, args) => {
      },
     ],);
    const embed = new Discord.MessageEmbed()
-   .setTitle("עדכון מרגש")
+   .setTitle("Channel Updates")
    .setDescription(`${message.channel} has been Locked`)
+   //you can choose any color you want
    .setColor("RANDOM");
    await message.channel.send(embed);
    message.delete();
